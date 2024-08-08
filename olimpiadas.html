@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <style>
+    .body{
+        background-color: rgb(208, 208, 255);
+    }
         * {
             margin: 0;
         }
@@ -18,16 +21,16 @@
 
             display: flex;
             background-color: rgb(234, 234, 234);
-            background-image: url(https://www.cp4.com.br/wp-content/uploads/2019/02/Paris.jpg);
+            background-image: url("../Downloads/sky-Eiffel-Tower-Paris-France-night-light-1051362-wallhere.com.jpg");
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: 1950px;
+            background-size: 2000px;
             border: solid rgb(58, 55, 55) 2.5px;
             padding: 3px;
-            align-items: center;
+            align-items: center center;
             justify-content: space-around;            
             width: 100%;
-            
+            margin-bottom: 180px;
         }
 
         .divimg {
@@ -55,48 +58,57 @@
             margin-left: 5px;
         }
 
-        .linklist {
-
-            display: flex;
-            color: rgb(70, 69, 69);
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .linklist li {
-            margin: 0 10px;
-            list-style: none;
+        .results-table {
+            width: 70%;
             
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
-        .tabela {
-        border:solid black 2px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        
+        .results-table th,
+        .results-table td {
+            padding: 12px 15px;
+            text-align: center;
         }
 
-        .titletab {
-        
+        .results-table th {
+            background-color: #2d2e2e;
+            color: #fff;
+            font-size: 16px;
         }
 
-        .tabela2 {
-        border: solid rgb(255, 255, 255) 3px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        
+        .results-table tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
 
-        .tr {
-            border: solid rgb(255, 255, 255) 3px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: whitesmoke;
+        .results-table tr:hover {
+            background-color: #f1f1f1;
         }
 
-        .body{
-            background-color: black;
+        .results-table img {
+            vertical-align: middle;
+            margin-right: 8px;
+            width: 20px;
+            height: 15px;
         }
 
+        .results-table td:first-child {
+            font-weight: bold;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
     </style>
 
 
@@ -116,57 +128,55 @@
 
 
     </header>
- 
-    <div class="tabela">
-        <h1>Resultado das Olimpíadas</h1>
-        <table class="tabela2">
+  <h1 class="header">Resultados das Olimpíadas 2024</h1>
+    <div class="container">       
+        <table class="results-table">
             <thead>
-                <tr class="tr">
-                    <th class="tr">Posição</th>
-                    <th class="tr">País</th>
-                    <th class="tr">Ouro</th>
-                    <th class="tr">Prata</th>
-                    <th class="tr">Bronze</th>
-                    <th class="tr">Total de Medalhas</th>
+                <tr>
+                    <th>Posição</th>
+                    <th>País</th>
+                    <th>Medalhas de Ouro</th>
+                    <th>Medalhas de Prata</th>
+                    <th>Medalhas de Bronze</th>
+                    <th>Total de Medalhas</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="tr">
-                    <td class="tr">1</td>
-                    <td class="tr">Estados Unidos</td>
-                    <td class="tr">27</td>
-                    <td class="tr">35</td>
-                    <td class="tr">33</td>
-                    <td class="tr">95</td>
+                <tr>
+                    <td>1º</td>
+                    <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/USA.png"> EUA</td>
+                    <td>27</td>
+                    <td>35</td>
+                    <td>33</td>
+                    <td>95</td>
                 </tr>
-                <tr class="tr">
-                    <td class="tr">2</td>
-                    <td class="tr">China</td>
-                    <td class="tr">26</td>
-                    <td class="tr">24</td>
-                    <td class="tr">17</td>
-                    <td class="tr">67</td>
+                <tr>
+                    <td>2º</td>
+                    <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/CHN.png"> CHN</td>
+                    <td>26</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>67</td>
                 </tr>
-                <tr class="tr">
-                    <td class="tr">3</td>
-                    <td class="tr">Austrália</td>
-                    <td class="tr">18</td>
-                    <td class="tr">14</td>
-                    <td class="tr">11</td>
-                    <td class="tr">43</td>
+                <tr>
+                    <td>3º</td>
+                    <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/AUS.png"> AUS</td>
+                    <td>18</td>
+                    <td>14</td>
+                    <td>11</td>
+                    <td>43</td>
                 </tr>
-                <tr class="tr">
-                    <td class="tr">18</td>
-                    <td class="tr">Brasil</td>
-                    <td class="tr">2</td>
-                    <td class="tr">5</td>
-                    <td class="tr">7</td>
-                    <td class="tr">14</td>
+                <tr>
+                    <td>18º</td>
+                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png"> BRA</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>14</td>
                 </tr>
             </tbody>
         </table>
-</div>
-
+    </div>
 </body>
 
 </html>
