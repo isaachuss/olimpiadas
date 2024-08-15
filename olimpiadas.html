@@ -128,7 +128,8 @@
             font-family: "Ubuntu", sans-serif;
             font-weight: 300;
             font-style: normal;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
+            border-bottom: 10px inset #000000;
 
 
         }
@@ -161,6 +162,10 @@
             height: 380px;
             margin-bottom: 60px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 44px 44px 44px 44px;
+            -webkit-border-radius: 44px 44px 44px 44px;
+            -moz-border-radius: 44px 44px 44px 44px;
+            border: #2d2e2e none;
         }
 
         .ti{
@@ -180,6 +185,26 @@
             margin-right: 20px;
             text-shadow: 1px 1px 2px grey;
         }
+
+        .cont{
+            margin-bottom: 70px;
+        }
+        
+        .botãolink {
+	     box-shadow: 4px 4px 11px -1px #000000;
+	     background:linear-gradient(to bottom, #768d87 5%, #585e5e 100%);
+	     background-color:#768d87;
+	     border-radius:17px;
+	     border:1px solid #4d4d4d;
+	     display:inline-block;
+	     cursor:pointer;
+	     color:#ffffff;
+	     font-family: "Ubuntu", sans-serif;
+
+	     font-size:19px;
+	     padding:8px 25px;
+	     text-decoration:none;
+	     text-shadow:0px 1px 0px #021411;}
     </style>
 
 
@@ -200,7 +225,8 @@
 
     </header>
   <h1 class="header">Resultados das Olimpíadas 2024</h1>
-    <div class="container">       
+    <div class="container">
+        <div class="cont">
         <table class="results-table">
             <thead>
                 <tr>
@@ -247,6 +273,7 @@
                 </tr>
             </tbody>
         </table>
+</div>       
     </div>
     <div class="noticias">
     <div class="noticia">
@@ -258,7 +285,7 @@
         <h1 class="ti">Gato Surpreende nas Olimpíadas com Break Dance</h1>
         <h3 class="pa">Paris, França – Em um evento que ficará marcado na história das Olimpíadas, um gato chamado Felix encantou o público com sua performance de break dance. Felix, que já era conhecido por suas habilidades de dança, superou todas as expectativas ao competir na estreia do break dance como modalidade olímpica.</h3>
         <h3 class="pa">Apesar de suas dificuldades físicas, Felix mostrou uma incrível determinação e talento. Ele realizou movimentos complexos e impressionantes, como giros e saltos, que deixaram a plateia e os jurados boquiabertos. Sua apresentação foi aplaudida de pé e se tornou um dos momentos mais emocionantes dos Jogos Olímpicos de Paris 2024.</h3>
-        <a href="./noticia_gato.html">ver mais</a>
+        <a href="./noticia_gato.html" class="botãolink">ver mais</a>
         </div>
     
     </div>
