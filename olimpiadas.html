@@ -6,207 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olimpiadas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-    <style>
-    .body{
-        background-color: rgb(255, 255, 255);
-    }
-        * {
-            margin: 0;
-        }
-
-        .cab {
-
-            display: flex;
-            background-color: rgb(234, 234, 234);
-            background-image: url("./night-Eiffel-Tower-Paris-France-745075-wallhere.com.jpg");
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: 2000px;
-            border: solid rgb(58, 55, 55) 2.5px;
-            padding: 3px;
-            align-items: center center;
-            justify-content: space-around;            
-            width: 100%;
-            margin-bottom: 100px;
-        }
-
-        .divimg {
-
-            height: 100%;
-            padding: 200px;
-
-
-
-
-        }
-        .link{
-
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .lego {
-            height: 350px;
-            margin-top: 5px;
-            margin-left: 5px;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .results-table {       
-            background-color: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .results-table th,
-        .results-table td {
-            padding: 12px 15px;
-            text-align: center;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .results-table th {
-            background-color: #2d2e2e;
-            color: #fff;
-            font-size: 16px;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .results-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .results-table tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        .results-table img {
-            vertical-align: middle;
-            margin-right: 8px;
-            width: 20px;
-            height: 15px;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .results-table td:first-child {
-            font-weight: bold;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-            margin-bottom: 50px;
-            border-bottom: 10px inset #000000;
-
-
-        }
-
-        .noticia{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row-reverse;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .texto{
-         width: 50%;                   
-        }
-
-        .noticias{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-
-        
-        }
-
-        .imgno{
-            width: 400px;
-            height: 380px;
-            margin-bottom: 60px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            border-radius: 44px 44px 44px 44px;
-            -webkit-border-radius: 44px 44px 44px 44px;
-            -moz-border-radius: 44px 44px 44px 44px;
-            border: #2d2e2e none;
-        }
-
-        .ti{
-            margin-bottom: 20px;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-            margin-right: 20px;
-            text-shadow: 1px 1px 2px rgb(185, 180, 180);
-        }
-
-        .pa{
-            margin-bottom: 20px;
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-            margin-right: 20px;
-            text-shadow: 1px 1px 2px grey;
-        }
-
-        .cont{
-            margin-bottom: 70px;
-        }
-        
-        .botãolink {
-	     box-shadow: 4px 4px 11px -1px #000000;
-	     background:linear-gradient(to bottom, #768d87 5%, #585e5e 100%);
-	     background-color:#768d87;
-	     border-radius:17px;
-	     border:1px solid #4d4d4d;
-	     display:inline-block;
-	     cursor:pointer;
-	     color:#ffffff;
-	     font-family: "Ubuntu", sans-serif;
-
-	     font-size:19px;
-	     padding:8px 25px;
-	     text-decoration:none;
-	     text-shadow:0px 1px 0px #021411;}
-    </style>
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -215,8 +22,7 @@
     <header class="cab">
         <div class="divimg">
 
-            <img src="C:\Users\Estudante\Downloads\emblem-oly.svg"
-                alt="cu" class="lego">
+            <img src="C:\Users\Estudante\Downloads\emblem-oly.svg" alt="cu" class="lego">
 
 
         </div>
@@ -224,72 +30,85 @@
 
 
     </header>
-  <h1 class="header">Resultados das Olimpíadas 2024</h1>
+    <h1 class="header">Resultados das Olimpíadas 2024</h1>
     <div class="container">
         <div class="cont">
-        <table class="results-table">
-            <thead>
-                <tr>
-                    <th>Posição</th>
-                    <th>País</th>
-                    <th>Medalhas de Ouro</th>
-                    <th>Medalhas de Prata</th>
-                    <th>Medalhas de Bronze</th>
-                    <th>Total de Medalhas</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1º</td>
-                    <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/USA.png"> EUA</td>
-                    <td>40</td>
-                    <td>44</td>
-                    <td>42</td>
-                    <td>126</td>
-                </tr>
-                <tr>
-                    <td>2º</td>
-                    <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/CHN.png"> CHN</td>
-                    <td>26</td>
-                    <td>24</td>
-                    <td>17</td>
-                    <td>67</td>
-                </tr>
-                <tr>
-                    <td>3º</td>
-                    <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/AUS.png"> AUS</td>
-                    <td>18</td>
-                    <td>14</td>
-                    <td>11</td>
-                    <td>43</td>
-                </tr>
-                <tr>
-                    <td>18º</td>
-                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png"> BRA</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>7</td>
-                    <td>14</td>
-                </tr>
-            </tbody>
-        </table>
-</div>       
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>País</th>
+                        <th>Medalhas de Ouro</th>
+                        <th>Medalhas de Prata</th>
+                        <th>Medalhas de Bronze</th>
+                        <th>Total de Medalhas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1º</td>
+                        <td><img
+                                src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/USA.png">
+                            EUA</td>
+                        <td>40</td>
+                        <td>44</td>
+                        <td>42</td>
+                        <td>126</td>
+                    </tr>
+                    <tr>
+                        <td>2º</td>
+                        <td><img
+                                src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/CHN.png">
+                            CHN</td>
+                        <td>26</td>
+                        <td>24</td>
+                        <td>17</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>3º</td>
+                        <td><img
+                                src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/AUS.png">
+                            AUS</td>
+                        <td>18</td>
+                        <td>14</td>
+                        <td>11</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>18º</td>
+                        <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png">
+                            BRA</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="noticias">
-    <div class="noticia">
-        <div>
-            <img class="imgno" src="C:\Users\Estudante\Downloads\gatodance.jpg" alt="">
+        <div class="noticia">
+            <div>
+                <img class="imgno" src="C:\Users\Estudante\Downloads\gatodance.jpg" alt="">
+            </div>
+
+            <div class="texto">
+                <h1 class="ti">Gato Surpreende nas Olimpíadas com Break Dance</h1>
+                <h3 class="pa">Paris, França – Em um evento que ficará marcado na história das Olimpíadas, um gato
+                    chamado Felix encantou o público com sua performance de break dance. Felix, que já era conhecido por
+                    suas habilidades de dança, superou todas as expectativas ao competir na estreia do break dance como
+                    modalidade olímpica.</h3>
+                <h3 class="pa">Apesar de suas dificuldades físicas, Felix mostrou uma incrível determinação e talento.
+                    Ele realizou movimentos complexos e impressionantes, como giros e saltos, que deixaram a plateia e
+                    os jurados boquiabertos. Sua apresentação foi aplaudida de pé e se tornou um dos momentos mais
+                    emocionantes dos Jogos Olímpicos de Paris 2024.</h3>
+                <a href="./noticia_gato.html" class="botãolink">ver mais</a>
+            </div>
+
         </div>
-        
-        <div class="texto">
-        <h1 class="ti">Gato Surpreende nas Olimpíadas com Break Dance</h1>
-        <h3 class="pa">Paris, França – Em um evento que ficará marcado na história das Olimpíadas, um gato chamado Felix encantou o público com sua performance de break dance. Felix, que já era conhecido por suas habilidades de dança, superou todas as expectativas ao competir na estreia do break dance como modalidade olímpica.</h3>
-        <h3 class="pa">Apesar de suas dificuldades físicas, Felix mostrou uma incrível determinação e talento. Ele realizou movimentos complexos e impressionantes, como giros e saltos, que deixaram a plateia e os jurados boquiabertos. Sua apresentação foi aplaudida de pé e se tornou um dos momentos mais emocionantes dos Jogos Olímpicos de Paris 2024.</h3>
-        <a href="./noticia_gato.html" class="botãolink">ver mais</a>
-        </div>
-    
-    </div>
-       
+
 
 
     </div>
