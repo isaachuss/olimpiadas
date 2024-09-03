@@ -1,0 +1,208 @@
+
+    * {
+        margin: 0;
+    }
+
+    .cab {
+
+        display: flex;
+        background-color: rgb(234, 234, 234);
+        background-image: url("./night-Eiffel-Tower-Paris-France-745075-wallhere.com.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 2000px;
+        border: solid rgb(58, 55, 55) 2.5px;
+        padding: 3px;
+        align-items: center center;
+        justify-content: space-around;            
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .divimg {
+
+        height: 100%;
+        padding: 200px;
+    }
+    .link{
+
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .lego {
+        height: 350px;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .results-table {       
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .results-table th,
+    .results-table td {
+        padding: 12px 15px;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .results-table th {
+        background-color: #2d2e2e;
+        color: #fff;
+        font-size: 16px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .results-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .results-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .results-table img {
+        vertical-align: middle;
+        margin-right: 8px;
+        width: 20px;
+        height: 15px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .results-table td:first-child {
+        font-weight: bold;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-bottom: 50px;
+        border-bottom: 10px inset #000000;
+
+
+    }
+
+    .noticia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .texto{
+     width: 50%;                   
+    }
+
+    .noticias{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
+    
+    }
+
+    .imgno{
+        width: 400px;
+        height: 380px;
+        margin-bottom: 60px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 44px 44px 44px 44px;
+        -webkit-border-radius: 44px 44px 44px 44px;
+        -moz-border-radius: 44px 44px 44px 44px;
+        border: #2d2e2e none;
+    }
+
+    .ti{
+        margin-bottom: 20px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-right: 20px;
+        text-shadow: 1px 1px 2px rgb(185, 180, 180);
+    }
+
+    .pa{
+        margin-bottom: 20px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-right: 20px;
+        text-shadow: 1px 1px 2px grey;
+    }
+
+    .cont{
+        margin-bottom: 70px;
+    }
+    
+    .botãolink {
+     box-shadow: 4px 4px 11px -1px #000000;
+     background:linear-gradient(to bottom, #768d87 5%, #585e5e 100%);
+     background-color:#768d87;
+     border-radius:17px;
+     border:1px solid #4d4d4d;
+     display:inline-block;
+     cursor:pointer;
+     color:#ffffff;
+     font-family: "Ubuntu", sans-serif;
+
+     font-size:19px;
+     padding:8px 25px;
+     text-decoration:none;
+     text-shadow:0px 1px 0px #021411;}
+
+
+
+
+
+     @media (max-width: 440px) {
+        body {
+            background-color: pink;
+        }
+    }
+    
+    @media (min-width: 441px) and (max-width: 760px) {
+        body {
+            background-color: lightblue;
+        }
+    }
+    
+    @media (min-width: 761px) {
+        body {
+            background-color: lightgreen;
+        }
+    }
